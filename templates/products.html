@@ -1,0 +1,74 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+	<div class="container">
+		<br>
+		<div class="row bg-light">
+			<div class="col-md-2"><a href="">Groceries</a></div>
+			<div class="col-md-2"><a href="">Utensils</a></div>
+			<div class="col-md-2"><a href="">Foodstuffs</a></div>
+			<div class="col-md-2"><a href="">Clothes</a></div>
+			<div class="col-md-2"><a href="">Fashion</a></div>
+			<div class="col-md-2"><a href="">Miscellaneous</a></div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-3 .offset-md-1 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/bahari.jpg') }}" alt="bahari cooking oil" class="img-responsive">
+				<p>
+					Bahari Cooking Oil - <span class="text-right">Ksh 260</span>
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2 m-2">
+				<img src="{{ url_for('static', filename='images/colgate.jpg') }}" alt="colgate" class="img-thumbnail">
+				<p>
+					Colgate Toopaste - Ksh. 105
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/vaseline.jpg')}}" alt="Vasline body oil" class="img-thumbnail">
+				<p>
+					Vaseline Body Oil - Ksh. 369
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+		</div>
+		<br><hr><div class="row">
+			<div class="col-md-3 .offset-md-1 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/kids.jpg') }}" alt="kids fashion" class="img-responsive">
+				<p>
+					Kids fashion - <span class="text-right">Ksh 460</span>
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2 m-2">
+				<img src="{{ url_for('static', filename='images/fashion.jpg') }}" alt="colgate" class="img-thumbnail">
+				<p>
+					from  - Ksh. 305
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/download.jpg')}}" alt="Vasline body oil" class="img-thumbnail">
+				<p>
+					foodstuff - Ksh. 200
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+		</div>
+		<br/>
+	</div>
+{% endblock %}
+

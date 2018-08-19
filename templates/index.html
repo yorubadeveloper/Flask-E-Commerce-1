@@ -1,0 +1,37 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+	<div class="container">
+		<br/>
+		<div class="row">
+			<div class="col-md-3 .offset-md-1 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/bahari.jpg') }}" alt="bahari cooking oil" class="img-responsive">
+				<p>
+					Bahari Cooking Oil - <span class="text-right">Ksh 260</span>
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2 m-2">
+				<img src="{{ url_for('static', filename='images/colgate.jpg') }}" alt="colgate" class="img-thumbnail">
+				<p>
+					Colgate Toopaste - Ksh. 105
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-3 bg-light p-2">
+				<img src="{{ url_for('static', filename='images/vaseline.jpg')}}" alt="Vasline body oil" class="img-thumbnail">
+				<p>
+					Vaseline Body Oil - Ksh. 369
+					<br>
+					<a href="">Add To Cart</a>
+				</p>
+			</div>
+		</div>
+		<br/>
+	</div>
+{% endblock %}
+
